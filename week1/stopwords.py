@@ -159,7 +159,7 @@ class CstopWords():
             else: seg[i] = sentence[swil[i-1]:swi]    # 上一個 stopword 的結束後 到 下一個 stopword 的開始)
             i += 1
             
-        if swil[i-1] < len(sentence)-1: seg[i] = sentence[swil[i-1]+1:]
+        if swil[i-1] < len(sentence)-1: seg[i] = sentence[swil[i-1]:]
             
         self.raw_seg = seg
             
